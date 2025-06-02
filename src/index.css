@@ -1,0 +1,18 @@
+html,
+body {
+  background-color: #14e0a1;
+  color: white;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.blended-background {
+  background: #0b0f2f;
+  background: linear-gradient(
+    160deg,
+    rgba(11, 15, 47, 1) 43%,
+    rgba(58, 151, 147, 1) 100%
+  );
+}
