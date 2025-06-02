@@ -8,7 +8,7 @@ const NavBarComponent = () => {
     <nav className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-5">
       {/* Company Name */}
       <div
-        className="fs-3 fw-bold"
+        className="fs-3 fw-bold btn-hover"
         style={{ cursor: "pointer" }}
         onClick={() => navigate("/")}
       >
