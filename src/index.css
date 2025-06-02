@@ -29,6 +29,12 @@ body {
   text-decoration: none;
 }
 
+.btn:active,
+.btn:focus {
+  transform: scale(0.95) !important;
+  box-shadow: 0 0 5px white !important;
+}
+
 .btn-hover {
   transition: all 0.3s ease;
 }
