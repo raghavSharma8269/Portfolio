@@ -1,3 +1,6 @@
+import logo from "../assets/software-solutions.png";
+import logo2 from "../assets/sfw.svg";
+
 export default function LandingPage() {
   return (
     <div className="container-fluid text-white blended-background min-vh-100 px-5 py-5">
@@ -48,8 +51,8 @@ export default function LandingPage() {
 
         <div className="col-md-6 position-relative" style={{ height: "500px" }}>
           <img
-            src="nfn"
-            alt="Placeholder"
+            src={logo}
+            alt="Logo"
             className="position-absolute top-0 start-0 w-100 h-100 object-fit-contain"
           />
         </div>
