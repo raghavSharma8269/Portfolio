@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import logo from "../assets/software-solutions.png";
+import logo from "../assets/logo.png";
 import NavBarComponent from "../components/NavBarComponent";
 
 export default function LandingPage() {
