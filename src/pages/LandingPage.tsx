@@ -10,11 +10,14 @@ export default function LandingPage() {
           Software <span style={{ color: "#14E0A1" }}>Solutions</span>
         </div>
         <div className="d-none d-md-flex gap-4">
-          <a href="#" className="text-white text-decoration-none">
+          <a href="#" className="text-white text-decoration-none nav-bar-link">
             Services
           </a>
-          <a href="#" className="text-white text-decoration-none">
+          <a href="#" className="text-white text-decoration-none nav-bar-link">
             Portfolio
+          </a>
+          <a href="#" className="text-white text-decoration-none nav-bar-link">
+            About Us
           </a>
         </div>
         <button

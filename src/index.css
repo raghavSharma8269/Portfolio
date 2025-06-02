@@ -16,3 +16,15 @@ body {
     rgba(58, 151, 147, 1) 100%
   );
 }
+
+.nav-bar-link {
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.nav-bar-link:hover {
+  border-bottom-color: #3a9793;
+  color: #3a9793;
+  text-decoration: none;
+}
