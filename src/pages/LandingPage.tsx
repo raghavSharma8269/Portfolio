@@ -15,19 +15,29 @@ export default function LandingPage() {
           Software <span style={{ color: "#14E0A1" }}>Solutions</span>
         </div>
         <div className="d-none d-md-flex gap-4">
-          <a href="#" className="text-white text-decoration-none nav-bar-link">
+          <a
+            href="/services"
+            className="text-white text-decoration-none nav-bar-link"
+          >
             Services
           </a>
-          <a href="#" className="text-white text-decoration-none nav-bar-link">
+          <a
+            href="/portfolio"
+            className="text-white text-decoration-none nav-bar-link"
+          >
             Portfolio
           </a>
-          <a href="#" className="text-white text-decoration-none nav-bar-link">
+          <a
+            href="about"
+            className="text-white text-decoration-none nav-bar-link"
+          >
             About Us
           </a>
         </div>
         <button
           className="btn btn-success btn-hover text-black fw-semibold px-4 py-2"
           style={{ backgroundColor: "#14E0A1" }}
+          onClick={() => navigate("/contact")}
         >
           Contact Us
         </button>
@@ -52,6 +62,7 @@ export default function LandingPage() {
           <button
             className="btn btn-success btn-hover mt-4 text-black fw-semibold px-4 py-2"
             style={{ backgroundColor: "#14E0A1" }}
+            onClick={() => navigate("/contact")}
           >
             Contact Us
           </button>
