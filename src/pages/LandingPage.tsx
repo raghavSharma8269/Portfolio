@@ -21,7 +21,7 @@ export default function LandingPage() {
           </a>
         </div>
         <button
-          className="btn btn-success text-black fw-semibold px-4 py-2"
+          className="btn btn-success btn-hover text-black fw-semibold px-4 py-2"
           style={{ backgroundColor: "#14E0A1" }}
         >
           Contact Us
@@ -45,7 +45,7 @@ export default function LandingPage() {
             hiring time and money.
           </p>
           <button
-            className="btn btn-success mt-4 text-black fw-semibold px-4 py-2"
+            className="btn btn-success btn-hover mt-4 text-black fw-semibold px-4 py-2"
             style={{ backgroundColor: "#14E0A1" }}
           >
             Contact Us

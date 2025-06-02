@@ -28,3 +28,12 @@ body {
   color: #3a9793;
   text-decoration: none;
 }
+
+.btn-hover {
+  transition: all 0.3s ease;
+}
+
+.btn-hover:hover {
+  filter: drop-shadow(0 0 5px #3a9793);
+  color: white !important;
+}
