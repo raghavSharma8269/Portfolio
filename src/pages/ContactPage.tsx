@@ -1,5 +1,8 @@
+import React from "react";
+import NavBarComponent from "../components/NavBarComponent";
+
 const ContactPage = () => {
-  return <div>ContactPage</div>;
+  return <NavBarComponent />;
 };
 
 export default ContactPage;
