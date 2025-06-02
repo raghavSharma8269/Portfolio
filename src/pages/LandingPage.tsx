@@ -62,6 +62,12 @@ export default function LandingPage() {
           >
             About Us
           </a>
+          <a
+            href="/contact"
+            className="text-white text-decoration-none nav-bar-link"
+          >
+            Contact
+          </a>
         </div>
 
         {/* MOBILE NAV - only visible when menuOpen is true */}
@@ -85,6 +91,13 @@ export default function LandingPage() {
             >
               About Us
             </a>
+            <a
+              href="/contact"
+              className="text-white text-decoration-none nav-bar-link"
+            >
+              Contact
+            </a>
+
             {/* <button
               className="btn btn-success btn-hover text-black fw-semibold px-4 py-2"
               style={{ backgroundColor: "#14E0A1" }}
