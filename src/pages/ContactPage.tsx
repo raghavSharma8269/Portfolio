@@ -1,4 +1,3 @@
-import React from "react";
 import NavBarComponent from "../components/NavBarComponent";
 
 const ContactPage = () => {

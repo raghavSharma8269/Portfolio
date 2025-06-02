@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import logo from "../assets/software-solutions.png";
 import NavBarComponent from "../components/NavBarComponent";
