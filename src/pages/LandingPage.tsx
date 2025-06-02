@@ -55,7 +55,7 @@ export default function LandingPage() {
         <div className="col-md-6 position-relative" style={{ height: "500px" }}>
           <img
             src="nfn"
-            alt="World Map"
+            alt="Placeholder"
             className="position-absolute top-0 start-0 w-100 h-100 object-fit-contain"
           />
         </div>
