@@ -1,5 +1,11 @@
+import NavBarComponent from "../components/NavBarComponent";
+
 const ServicesPage = () => {
-  return <div>ServicesPage</div>;
+  return (
+    <>
+      <NavBarComponent />
+    </>
+  );
 };
 
 export default ServicesPage;
