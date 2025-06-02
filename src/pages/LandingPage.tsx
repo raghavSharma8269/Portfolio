@@ -1,12 +1,18 @@
 import logo from "../assets/software-solutions.png";
 import logo2 from "../assets/sfw.svg";
+import { useNavigate } from "react-router-dom";
 
 export default function LandingPage() {
+  const navigate = useNavigate();
   return (
     <div className="container-fluid text-white blended-background min-vh-100 px-5 py-5">
       {/* Navbar */}
       <nav className="d-flex justify-content-between align-items-center mb-5">
-        <div className="fs-3 fw-bold">
+        <div
+          className="fs-3 fw-bold"
+          style={{ cursor: "pointer" }}
+          onClick={() => navigate("/")}
+        >
           Software <span style={{ color: "#14E0A1" }}>Solutions</span>
         </div>
         <div className="d-none d-md-flex gap-4">
