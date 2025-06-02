@@ -85,24 +85,24 @@ export default function LandingPage() {
             >
               About Us
             </a>
-            <button
+            {/* <button
               className="btn btn-success btn-hover text-black fw-semibold px-4 py-2"
               style={{ backgroundColor: "#14E0A1" }}
               onClick={() => navigate("/contact")}
             >
               Contact Us
-            </button>
+            </button> */}
           </div>
         )}
 
         {/* Contact Button */}
-        <button
+        {/* <button
           className="btn btn-success btn-hover text-black fw-semibold px-4 py-2 mt-3 mt-md-0"
           style={{ backgroundColor: "#14E0A1" }}
           onClick={() => navigate("/contact")}
         >
           Contact Us
-        </button>
+        </button> */}
       </nav>
 
       {/* Hero Section */}
