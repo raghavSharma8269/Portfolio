@@ -1,5 +1,4 @@
 import logo from "../assets/software-solutions.png";
-import logo2 from "../assets/sfw.svg";
 import { useNavigate } from "react-router-dom";
 
 export default function LandingPage() {
