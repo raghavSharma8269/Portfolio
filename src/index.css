@@ -11,7 +11,7 @@ body {
 .blended-background {
   background: #0b0f2f;
   background: linear-gradient(
-    160deg,
+    165deg,
     rgba(11, 15, 47, 1) 43%,
     rgba(58, 151, 147, 1) 100%
   );
