@@ -8,16 +8,10 @@ export default function LandingPage() {
         </div>
         <div className="d-none d-md-flex gap-4">
           <a href="#" className="text-white text-decoration-none">
-            Hire Remote Team
-          </a>
-          <a href="#" className="text-white text-decoration-none">
-            Hire Teams
-          </a>
-          <a href="#" className="text-white text-decoration-none">
             Services
           </a>
           <a href="#" className="text-white text-decoration-none">
-            Success Stories
+            Portfolio
           </a>
         </div>
         <button
