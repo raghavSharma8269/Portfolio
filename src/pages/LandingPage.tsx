@@ -14,16 +14,16 @@ export default function LandingPage() {
         <div className="col-md-6">
           <h1 className="display-4 fw-bold">
             Hire a{" "}
-            <span style={{ color: "#14E0A1" }}>Top-Tier Software Team </span>
+            <span style={{ color: "#14E0A1" }}>Passionate Software Team </span>
             for your Project
           </h1>
           <p className="mt-4 text-secondary">
             <strong className="text-white">
-              Stop the endless hiring hunt and skyrocketing costs;
+              Say goodbye to the endless hiring search and soaring costs.{" "}
             </strong>{" "}
-            We have a team of skilled developers, designers, and marketing
-            professionals to deliver low-cost, high-quality work. Save your
-            hiring time and money.
+            Our team of skilled developers, designers, and marketing
+            professionals delivers high quality results at a low cost; saving
+            you time, money, and stress."
           </p>
           <button
             className="btn btn-success btn-hover mt-4 text-black fw-semibold px-4 py-2"
