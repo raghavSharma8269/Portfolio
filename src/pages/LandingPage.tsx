@@ -22,8 +22,8 @@ export default function LandingPage() {
               Say goodbye to the endless hiring search and soaring costs.{" "}
             </strong>{" "}
             Our team of skilled developers, designers, and marketing
-            professionals delivers high quality results at a low cost; saving
-            you time, money, and stress."
+            professionals delivers high quality results at a low cost. Saving
+            you time, money, and stress.
           </p>
           <button
             className="btn btn-success btn-hover mt-4 text-black fw-semibold px-4 py-2"
