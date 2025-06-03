@@ -43,3 +43,15 @@ body {
   filter: drop-shadow(0 0 5px #3a9793);
   color: white !important;
 }
+
+.form-control {
+  background-color: #132841;
+  border-color: #3a9793;
+  color: white;
+}
+
+.form-control:focus {
+  background-color: #132841;
+  box-shadow: 0 0 5px #3a9793;
+  color: white;
+}
