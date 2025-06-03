@@ -6,7 +6,7 @@ const AboutUsPage = () => {
       <NavBarComponent />
       <div className="container mt-4">
         <div className="text-center">
-          <h1>About Us</h1>
+          <h1 style={{ color: "#14E0A1" }}>About Us</h1>
           <p>
             We are a team of passionate individuals dedicated to delivering the
             best services to our clients.

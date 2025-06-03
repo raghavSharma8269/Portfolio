@@ -7,7 +7,7 @@ import PortfolioPage from "./pages/PortfolioPage";
 
 function App() {
   return (
-    <div className="container-fluid text-white blended-background min-vh-100 px-3 px-md-5 py-4">
+    <div className="container-fluid text-white blended-background min-vh-100 px-3 px-md-5 py-4 overflow-auto">
       <Router>
         <Routes>
           <Route path="/" element={<LandingPage />} />
