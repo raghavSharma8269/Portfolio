@@ -1,7 +1,42 @@
 import FooterComponent from "../components/FooterComponent";
 import NavBarComponent from "../components/NavBarComponent";
+import axios from "axios";
+import { useState, type FormEvent } from "react";
 
 const ContactPage = () => {
+  const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const response = await axios.post(
+        "https://formsubmit.co/r.sharmali2023@gmail.com",
+        formData,
+        {
+          headers: {
+            Accept: "application/json",
+          },
+        }
+      );
+
+      if (response.status === 200) {
+        setStatus("success");
+        alert("✅ Message sent successfully!");
+        form.reset();
+      } else {
+        setStatus("error");
+        alert("❌ Failed to send message.");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      setStatus("error");
+      alert("❌ Something went wrong.");
+    }
+  };
+
   return (
     <>
       <NavBarComponent />
@@ -13,11 +48,7 @@ const ContactPage = () => {
           </p>
         </div>
         <div className="d-flex justify-content-center">
-          <form
-            action="https://formsubmit.co/r.sharmali2023@gmail.com"
-            method="POST"
-            className="mt-4 w-50 w-md-50"
-          >
+          <form onSubmit={handleSubmit} className="mt-4 w-50 w-md-50">
             <input
               type="hidden"
               name="_subject"
