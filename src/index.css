@@ -17,6 +17,15 @@ body {
   );
 }
 
+.blended-background-reverse {
+  background: #0b0f2f;
+  background: linear-gradient(
+    330deg,
+    rgba(11, 15, 47, 1) 43%,
+    rgba(58, 151, 147, 1) 100%
+  );
+}
+
 .nav-bar-link {
   padding-bottom: 2px;
   border-bottom: 2px solid transparent;
@@ -54,4 +63,15 @@ body {
   background-color: #132841;
   box-shadow: 0 0 5px #3a9793;
   color: white;
+}
+
+.project-link {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #14e0a1;
+  transition: color 0.2s ease;
+}
+
+.project-link:hover {
+  color: #0f9a7b;
 }
