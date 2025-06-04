@@ -1,12 +1,9 @@
 import FooterComponent from "../components/FooterComponent";
 import NavBarComponent from "../components/NavBarComponent";
 import axios from "axios";
-import { useState, type FormEvent } from "react";
 
 const ContactPage = () => {
-  const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
-
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget;
     const formData = new FormData(form);
@@ -23,16 +20,13 @@ const ContactPage = () => {
       );
 
       if (response.status === 200) {
-        setStatus("success");
         alert("✅ Message sent successfully!");
         form.reset();
       } else {
-        setStatus("error");
         alert("❌ Failed to send message.");
       }
     } catch (error) {
       console.error("Form submission error:", error);
-      setStatus("error");
       alert("❌ Something went wrong.");
     }
   };
