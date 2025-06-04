@@ -1,3 +1,4 @@
+import FooterComponent from "../components/FooterComponent";
 import NavBarComponent from "../components/NavBarComponent";
 
 const AboutUsPage = () => {
@@ -49,6 +50,7 @@ const AboutUsPage = () => {
           </p>
         </div>
       </div>
+      <FooterComponent />
     </>
   );
 };

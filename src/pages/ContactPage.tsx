@@ -1,3 +1,4 @@
+import FooterComponent from "../components/FooterComponent";
 import NavBarComponent from "../components/NavBarComponent";
 
 const ContactPage = () => {
@@ -51,6 +52,7 @@ const ContactPage = () => {
           </form>
         </div>
       </div>
+      <FooterComponent />
     </>
   );
 };

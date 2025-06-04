@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import logo from "../assets/logo.png";
 import NavBarComponent from "../components/NavBarComponent";
+import FooterComponent from "../components/FooterComponent";
 
 export default function LandingPage() {
   const navigate = useNavigate();
@@ -42,6 +43,7 @@ export default function LandingPage() {
           />
         </div>
       </div>
+      <FooterComponent />
     </>
   );
 }
