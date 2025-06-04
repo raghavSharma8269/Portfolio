@@ -13,12 +13,28 @@ const ContactPage = () => {
           </p>
         </div>
         <div className="d-flex justify-content-center">
-          <form className="mt-4 w-50 w-md-50">
+          <form
+            action="https://formsubmit.co/r.sharmali2023@gmail.com"
+            method="POST"
+            className="mt-4 w-50 w-md-50"
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="Software Solutions Contact Form Submission"
+            />
+            <input type="hidden" name="_captcha" value="false" />
             <div className="mb-3">
               <label htmlFor="name" className="form-label">
                 Name
               </label>
-              <input type="text" className="form-control" id="name" required />
+              <input
+                type="text"
+                className="form-control"
+                id="name"
+                name="name"
+                required
+              />
             </div>
             <div className="mb-3">
               <label htmlFor="email" className="form-label mt-3">
@@ -28,6 +44,7 @@ const ContactPage = () => {
                 type="email"
                 className="form-control"
                 id="email"
+                name="email"
                 required
               />
             </div>
@@ -38,13 +55,14 @@ const ContactPage = () => {
               <textarea
                 className="form-control"
                 id="message"
+                name="message"
                 rows={5}
                 required
               />
             </div>
             <button
               type="submit"
-              className="btn btn-success btn-hover mt-4 text-black fw-semibold px-4 py-2"
+              className="btn btn-success mt-4 text-black fw-semibold px-4 py-2"
               style={{ backgroundColor: "#14E0A1" }}
             >
               Send Message
