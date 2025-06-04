@@ -43,7 +43,7 @@ const AboutUsPage = () => {
           <p>
             If you would like to learn more about our services or discuss a
             potential project, please{" "}
-            <a href="/contact" className="text-decoration-none">
+            <a href="/contact" className="project-link">
               contact us
             </a>
             .
