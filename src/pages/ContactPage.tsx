@@ -1,9 +1,13 @@
 import FooterComponent from "../components/FooterComponent";
 import NavBarComponent from "../components/NavBarComponent";
 import axios from "axios";
+import { useState, type FormEvent } from "react";
 
 const ContactPage = () => {
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const [alertMessage, setAlertMessage] = useState<string | null>(null);
+  const [alertType, setAlertType] = useState<"success" | "danger" | null>(null);
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget;
     const formData = new FormData(form);
@@ -20,15 +24,24 @@ const ContactPage = () => {
       );
 
       if (response.status === 200) {
-        alert("✅ Message sent successfully!");
+        setAlertType("success");
+        setAlertMessage("✅ Message sent successfully!");
         form.reset();
       } else {
-        alert("❌ Failed to send message.");
+        setAlertType("danger");
+        setAlertMessage("❌ Failed to send message.");
       }
     } catch (error) {
       console.error("Form submission error:", error);
-      alert("❌ Something went wrong.");
+      setAlertType("danger");
+      setAlertMessage("❌ Something went wrong.");
     }
+
+    // removes the alert after 7 seconds
+    setTimeout(() => {
+      setAlertMessage(null);
+      setAlertType(null);
+    }, 7000);
   };
 
   return (
@@ -41,6 +54,17 @@ const ContactPage = () => {
             If you have any questions, feel free to reach out!
           </p>
         </div>
+
+        {/* Bootstrap Alert */}
+        {alertMessage && alertType && (
+          <div
+            className={`alert alert-${alertType} mt-4 w-75 mx-auto`}
+            role="alert"
+          >
+            {alertMessage}
+          </div>
+        )}
+
         <div className="d-flex justify-content-center">
           <form onSubmit={handleSubmit} className="mt-4 w-50 w-md-50">
             <input
