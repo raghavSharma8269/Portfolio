@@ -111,7 +111,7 @@ const ContactPage = () => {
             </div>
             <button
               type="submit"
-              className="btn btn-success mt-4 text-black fw-semibold px-4 py-2"
+              className="btn btn-success btn-hover mt-4 text-black fw-semibold px-4 py-2"
               style={{ backgroundColor: "#14E0A1" }}
             >
               Send Message
