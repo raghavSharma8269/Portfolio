@@ -32,6 +32,10 @@ const NavBarComponent = () => {
       {/* Toggle Button (visible on mobile) */}
       <button
         className="btn d-md-none mt-3 text-white" // the class name d(display)-md(medium sized screen >=768 px)-none(do not display) means that the hamburger icon will not be dispalyed on screens larger than 768 px
+        style={{
+          fontSize: "18px",
+          background: "#14E0A1",
+        }}
         onClick={() => setMenuOpen(!menuOpen)} // toggles the menuOpen state
       >
         ☰
@@ -42,7 +46,7 @@ const NavBarComponent = () => {
         {/* the class name d-none means that the links will not be displayed on screens smaller than 768 px */}
         <a
           href="/services"
-          className="text-white text-decoration-none nav-bar-link"
+          className="text-white text-decoration-underline nav-bar-link"
         >
           Services
         </a>
@@ -72,24 +76,28 @@ const NavBarComponent = () => {
           <a
             href="/services"
             className="text-white text-decoration-none nav-bar-link"
+            style={{ borderBottom: "2px solid #14E0A1" }}
           >
             Services
           </a>
           <a
             href="/portfolio"
             className="text-white text-decoration-none nav-bar-link"
+            style={{ borderBottom: "2px solid #14E0A1" }}
           >
             Portfolio
           </a>
           <a
             href="/about"
             className="text-white text-decoration-none nav-bar-link"
+            style={{ borderBottom: "2px solid #14E0A1" }}
           >
             About Us
           </a>
           <a
             href="/contact"
             className="text-white text-decoration-none nav-bar-link"
+            style={{ borderBottom: "2px solid #14E0A1" }}
           >
             Contact
           </a>
