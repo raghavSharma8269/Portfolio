@@ -32,7 +32,7 @@ const NotFoundPage = () => {
       <button
         className="btn btn-success btn-hover mt-4 text-black fw-semibold px-4 py-2"
         style={{ backgroundColor: "#14E0A1" }}
-        onClick={() => navigate("/contact")}
+        onClick={() => navigate("/")}
       >
         Return Home
       </button>
