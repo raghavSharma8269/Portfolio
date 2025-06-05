@@ -46,7 +46,7 @@ const NavBarComponent = () => {
         {/* the class name d-none means that the links will not be displayed on screens smaller than 768 px */}
         <a
           href="/services"
-          className="text-white text-decoration-underline nav-bar-link"
+          className="text-white text-decoration-none nav-bar-link"
         >
           Services
         </a>
