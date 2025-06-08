@@ -37,6 +37,11 @@ body {
   text-decoration: none;
 }
 
+.btn {
+  border-radius: 50px;
+  background-color: #14e0a1;
+}
+
 .btn:active,
 .btn:focus {
   transform: scale(0.95) !important;
