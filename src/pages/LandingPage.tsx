@@ -35,8 +35,8 @@ export default function LandingPage() {
             View Our Work
           </button>
           <button
-            className="btn btn-success btn-hover mt-4 text-black fw-semibold px-4 py-2"
-            style={{ backgroundColor: "#14E0A1" }}
+            className="btn btn-success btn-hover mt-4 text-white fw-semibold px-4 py-2"
+            style={{ backgroundColor: "transparent" }}
             onClick={() => navigate("/contact")}
           >
             Contact Us
