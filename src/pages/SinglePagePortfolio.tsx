@@ -18,7 +18,7 @@ const SinglePagePortfolio = () => {
             href="#hero"
             style={{ color: "#14E0A1" }}
           >
-            DevTeam
+            Raghav Sharma
           </a>
 
           <button
@@ -87,19 +87,16 @@ const SinglePagePortfolio = () => {
           <div className="row align-items-center">
             <div className="col-lg-6">
               <h1 className="display-3 fw-bold lh-1 mb-4">
-                Hire a{" "}
-                <span style={{ color: "#14E0A1" }}>
-                  Passionate Software Team
-                </span>{" "}
-                for your Project
+                Hi, I'm <span style={{ color: "#14E0A1" }}>Raghav Sharma</span>{" "}
+                - Full Stack Developer
               </h1>
-              <p className="fs-5 text-secondary mb-4">
+              <p className="fs-5 text-white mb-4">
                 <strong className="text-white">
-                  Say goodbye to the endless hiring search and soaring costs.
+                  Passionate about creating innovative software solutions.
                 </strong>{" "}
-                Our team of skilled developers, designers, and marketing
-                professionals delivers high quality results at a low cost.
-                Saving you time, money, and stress.
+                I specialize in building modern web applications using React,
+                TypeScript, Java, and Spring Boot. I deliver high-quality,
+                scalable solutions that solve real-world problems.
               </p>
               <div className="d-flex flex-column flex-sm-row gap-3">
                 <button
@@ -107,14 +104,14 @@ const SinglePagePortfolio = () => {
                   className="btn btn-lg fw-semibold px-4 py-3"
                   style={{ backgroundColor: "#14E0A1", color: "black" }}
                 >
-                  View Our Work
+                  View My Work
                 </button>
                 <button
                   onClick={() => scrollToSection("contact")}
                   className="btn btn-outline-light btn-lg fw-semibold px-4 py-3"
                   style={{ borderColor: "#14E0A1" }}
                 >
-                  Contact Us
+                  Get In Touch
                 </button>
               </div>
             </div>
@@ -161,15 +158,16 @@ const SinglePagePortfolio = () => {
         <div className="container">
           <div className="text-center mb-5">
             <h2 className="display-4 fw-bold mb-4" style={{ color: "#14E0A1" }}>
-              About Us
+              About Me
             </h2>
             <p
-              className="fs-5 text-secondary mx-auto"
+              className="fs-5 text-white mx-auto"
               style={{ maxWidth: "800px" }}
             >
-              We are a team of passionate individuals dedicated to delivering
-              the best services to our clients. Our mission is to provide
-              high-quality solutions that meet the unique needs of each client.
+              I'm a passionate full-stack developer with a love for creating
+              innovative software solutions. I believe in writing clean,
+              efficient code and delivering exceptional user experiences that
+              make a real impact.
             </p>
           </div>
 
@@ -185,10 +183,10 @@ const SinglePagePortfolio = () => {
               >
                 <span className="fs-3 text-dark">🤝</span>
               </div>
-              <h5 className="fw-bold">Integrity</h5>
-              <p className="text-secondary">
-                We build trust through honest communication and reliable
-                delivery.
+              <h5 className="fw-bold">Problem Solving</h5>
+              <p className="text-white">
+                I love tackling complex challenges and finding elegant solutions
+                to technical problems.
               </p>
             </div>
             <div className="col-md-6 col-lg-3 text-center">
@@ -203,8 +201,9 @@ const SinglePagePortfolio = () => {
                 <span className="fs-3 text-dark">💡</span>
               </div>
               <h5 className="fw-bold">Innovation</h5>
-              <p className="text-secondary">
-                We embrace cutting-edge technologies and creative solutions.
+              <p className="text-white">
+                I stay current with latest technologies and embrace creative
+                approaches to development.
               </p>
             </div>
             <div className="col-md-6 col-lg-3 text-center">
@@ -218,10 +217,10 @@ const SinglePagePortfolio = () => {
               >
                 <span className="fs-3 text-dark">🎯</span>
               </div>
-              <h5 className="fw-bold">Customer Focus</h5>
-              <p className="text-secondary">
-                Your success is our priority, and we tailor solutions to your
-                needs.
+              <h5 className="fw-bold">User-Focused</h5>
+              <p className="text-white">
+                I prioritize creating intuitive, accessible experiences that
+                users love to interact with.
               </p>
             </div>
             <div className="col-md-6 col-lg-3 text-center">
@@ -233,30 +232,13 @@ const SinglePagePortfolio = () => {
                   backgroundColor: "#14E0A1",
                 }}
               >
-                <span className="fs-3 text-dark">👥</span>
+                <span className="fs-3 text-dark">🚀</span>
               </div>
-              <h5 className="fw-bold">Teamwork</h5>
-              <p className="text-secondary">
-                Collaboration drives our success and delivers exceptional
-                results.
+              <h5 className="fw-bold">Continuous Learning</h5>
+              <p className="text-white">
+                I'm always learning new technologies and improving my skills to
+                deliver better solutions.
               </p>
-            </div>
-          </div>
-
-          <div className="row justify-content-center mt-5">
-            <div className="col-lg-8">
-              <div className="card bg-dark border-secondary p-4">
-                <div className="card-body text-center">
-                  <h4 className="card-title fw-bold mb-3">Meet Our Team</h4>
-                  <p className="card-text text-secondary">
-                    Our team consists of experts in various fields, including
-                    software development, design, and marketing. We work
-                    collaboratively to ensure the success of every project,
-                    bringing years of experience and a commitment to excellence
-                    in everything we do.
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -267,58 +249,62 @@ const SinglePagePortfolio = () => {
         <div className="container">
           <div className="text-center mb-5">
             <h2 className="display-4 fw-bold mb-4" style={{ color: "#14E0A1" }}>
-              Our Services
+              My Skills
             </h2>
             <p
-              className="fs-5 text-secondary mx-auto"
+              className="fs-5 text-white mx-auto"
               style={{ maxWidth: "600px" }}
             >
-              We offer comprehensive software solutions tailored to your
-              business needs
+              I specialize in full-stack development with a focus on modern,
+              scalable solutions
             </p>
           </div>
 
           <div className="row g-4">
             <div className="col-md-6 col-lg-4">
-              <div className="card bg-dark border-secondary h-100 hover-card">
+              <div className="card bg-dark border-white h-100 hover-card">
                 <div className="card-body p-4">
                   <div className="mb-3">
                     <span className="fs-1">💻</span>
                   </div>
                   <h5 className="card-title fw-bold mb-3">
-                    Software Development
+                    Frontend Development
                   </h5>
-                  <p className="card-text text-secondary">
-                    Custom web and mobile applications built with modern
-                    technologies like React, TypeScript, Java, and Spring Boot.
+                  <p className="card-text text-white">
+                    React, TypeScript, HTML5, CSS3, Bootstrap, and modern
+                    JavaScript frameworks for creating responsive, interactive
+                    user interfaces.
                   </p>
                 </div>
               </div>
             </div>
             <div className="col-md-6 col-lg-4">
-              <div className="card bg-dark border-secondary h-100 hover-card">
+              <div className="card bg-dark border-white h-100 hover-card">
                 <div className="card-body p-4">
                   <div className="mb-3">
-                    <span className="fs-1">🎨</span>
+                    <span className="fs-1">⚙️</span>
                   </div>
-                  <h5 className="card-title fw-bold mb-3">UI/UX Design</h5>
-                  <p className="card-text text-secondary">
-                    Beautiful, intuitive designs that enhance user experience
-                    and drive engagement across all platforms.
+                  <h5 className="card-title fw-bold mb-3">
+                    Backend Development
+                  </h5>
+                  <p className="card-text text-white">
+                    Java, Spring Boot, REST APIs, database design, and
+                    server-side development for robust, scalable applications.
                   </p>
                 </div>
               </div>
             </div>
             <div className="col-md-6 col-lg-4">
-              <div className="card bg-dark border-secondary h-100 hover-card">
+              <div className="card bg-dark border-white h-100 hover-card">
                 <div className="card-body p-4">
                   <div className="mb-3">
-                    <span className="fs-1">📈</span>
+                    <span className="fs-1">🛠️</span>
                   </div>
-                  <h5 className="card-title fw-bold mb-3">Digital Marketing</h5>
-                  <p className="card-text text-secondary">
-                    Strategic marketing solutions to help your business grow and
-                    reach your target audience effectively.
+                  <h5 className="card-title fw-bold mb-3">Development Tools</h5>
+                  <p className="card-text text-white">
+                    Git, VS Code, IntelliJ IDEA, Docker, deployment platforms,
+                    and modern development workflows for efficient project
+                    delivery.
                   </p>
                 </div>
               </div>
@@ -332,23 +318,22 @@ const SinglePagePortfolio = () => {
         <div className="container">
           <div className="text-center mb-5">
             <h2 className="display-4 fw-bold mb-4" style={{ color: "#14E0A1" }}>
-              Our Portfolio
+              My Portfolio
             </h2>
             <p
-              className="fs-5 text-secondary mx-auto"
+              className="fs-5 text-white mx-auto"
               style={{ maxWidth: "700px" }}
             >
-              Explore our diverse range of projects that showcase our expertise
-              and creativity
+              Here are some of the projects I've built that showcase my skills
+              and passion for development
             </p>
           </div>
 
           <div className="text-center mb-4">
-            <p className="text-secondary mx-auto" style={{ maxWidth: "800px" }}>
-              We take pride in delivering high-quality solutions tailored to
-              meet the unique needs of our clients. Our portfolio includes a
-              variety of projects across different industries, demonstrating our
-              commitment to excellence and innovation.
+            <p className="text-white mx-auto" style={{ maxWidth: "800px" }}>
+              Each project represents a unique challenge I've tackled, from
+              concept to deployment. I focus on creating applications that are
+              not only functional but also provide exceptional user experiences.
             </p>
           </div>
 
@@ -358,7 +343,7 @@ const SinglePagePortfolio = () => {
 
           <div className="row justify-content-center">
             <div className="col-lg-10">
-              <div className="card bg-dark border-secondary">
+              <div className="card bg-dark border-white">
                 <div className="card-body p-4">
                   <div className="row align-items-center">
                     <div className="col-lg-6 text-center mb-4 mb-lg-0">
@@ -377,12 +362,13 @@ const SinglePagePortfolio = () => {
                       <h4 className="fw-bold mb-3" style={{ color: "#14E0A1" }}>
                         JobVault
                       </h4>
-                      <p className="text-secondary mb-4">
-                        JobVault is a web application designed to help users
-                        track their job applications. It includes features for
-                        uploading resumes and cover letters, and managing job
-                        applications. Built with Java, Spring Boot, React,
-                        TypeScript, HTML/CSS.
+                      <p className="text-white mb-4">
+                        JobVault is a comprehensive web application I developed
+                        to help job seekers organize and track their
+                        applications. Features include resume and cover letter
+                        management, application status tracking, and intuitive
+                        dashboard views. Built with Java, Spring Boot, React,
+                        and TypeScript.
                       </p>
                       <a
                         href="https://job-vault-livid.vercel.app/welcome"
@@ -407,17 +393,18 @@ const SinglePagePortfolio = () => {
         <div className="container">
           <div className="text-center mb-5">
             <h2 className="display-4 fw-bold mb-4" style={{ color: "#14E0A1" }}>
-              Contact Us
+              Let's Connect
             </h2>
-            <p className="fs-5 text-secondary">
-              If you have any questions or would like to discuss a project, feel
-              free to reach out!
+            <p className="fs-5 text-white">
+              I'm always interested in new opportunities and collaborations.
+              Feel free to reach out if you'd like to discuss a project or just
+              say hello!
             </p>
           </div>
 
           <div className="row justify-content-center">
             <div className="col-md-6">
-              <div className="card bg-dark border-secondary">
+              <div className="card bg-dark border-white">
                 <div className="card-body p-4">
                   <div className="mb-3">
                     <label htmlFor="name" className="form-label">
@@ -427,7 +414,7 @@ const SinglePagePortfolio = () => {
                       type="text"
                       id="name"
                       name="name"
-                      className="form-control bg-secondary border-0 text-white"
+                      className="form-control bg-white border-0 text-white"
                       required
                     />
                   </div>
@@ -440,7 +427,7 @@ const SinglePagePortfolio = () => {
                       type="email"
                       id="email"
                       name="email"
-                      className="form-control bg-secondary border-0 text-white"
+                      className="form-control bg-white border-0 text-white"
                       required
                     />
                   </div>
@@ -453,7 +440,7 @@ const SinglePagePortfolio = () => {
                       id="message"
                       name="message"
                       rows={5}
-                      className="form-control bg-secondary border-0 text-white"
+                      className="form-control bg-white border-0 text-white"
                       required
                     />
                   </div>
@@ -479,7 +466,7 @@ const SinglePagePortfolio = () => {
               DevTeam
             </span>
           </div>
-          <p className="text-secondary mb-0">
+          <p className="text-white mb-0">
             © 2025 DevTeam. All rights reserved. | Passionate Software Solutions
           </p>
         </div>
