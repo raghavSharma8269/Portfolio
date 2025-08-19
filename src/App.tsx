@@ -12,12 +12,12 @@ function App() {
     <div className="container-fluid text-white blended-background min-vh-100 px-3 px-md-5 py-4 overflow-auto">
       <Router>
         <Routes>
-          <Route path="/" element={<LandingPage />} />
+          <Route path="/landing" element={<LandingPage />} />
           <Route path="/about" element={<AboutUsPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
-          <Route path="/main" element={<SinglePagePortfolio />} />
+          <Route path="/" element={<SinglePagePortfolio />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Router>
