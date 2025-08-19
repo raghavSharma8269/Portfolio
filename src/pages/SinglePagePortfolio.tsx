@@ -531,54 +531,58 @@ const SinglePagePortfolio = () => {
           </div>
 
           <div className="row justify-content-center">
-            <div className="col-md-6">
-              <div className="card bg-dark border-white">
-                <div className="card-body p-4">
-                  <div className="mb-3">
-                    <label htmlFor="name" className="form-label">
-                      👤 Name
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      className="form-control bg-secondary border-0 text-white"
-                      required
-                    />
+            <div className="col-md-8">
+              <div className="row g-4">
+                {/* Email Card */}
+                <div className="col-md-6">
+                  <div className="card bg-dark border-white h-100 hover-card text-center">
+                    <div className="card-body p-4 d-flex flex-column justify-content-center">
+                      <div className="mb-3">
+                        <i
+                          className="bi bi-envelope-fill"
+                          style={{ fontSize: "3rem", color: "#14E0A1" }}
+                        ></i>
+                      </div>
+                      <h5 className="card-title fw-bold mb-3">Email</h5>
+                      <p className="card-text text-white mb-3">
+                        Let's discuss your next project
+                      </p>
+                      <a
+                        href="mailto:r.sharmali2023@gmail.com"
+                        className="btn fw-semibold px-4 py-2"
+                        style={{ backgroundColor: "#14E0A1", color: "black" }}
+                      >
+                        r.sharmali2023@gmail.com
+                      </a>
+                    </div>
                   </div>
+                </div>
 
-                  <div className="mb-3">
-                    <label htmlFor="email" className="form-label">
-                      📧 Email
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      className="form-control bg-secondary border-0 text-white"
-                      required
-                    />
+                {/* LinkedIn Card */}
+                <div className="col-md-6">
+                  <div className="card bg-dark border-white h-100 hover-card text-center">
+                    <div className="card-body p-4 d-flex flex-column justify-content-center">
+                      <div className="mb-3">
+                        <i
+                          className="bi bi-linkedin"
+                          style={{ fontSize: "3rem", color: "#14E0A1" }}
+                        ></i>
+                      </div>
+                      <h5 className="card-title fw-bold mb-3">LinkedIn</h5>
+                      <p className="card-text text-white mb-3">
+                        Connect with me professionally
+                      </p>
+                      <a
+                        href="https://www.linkedin.com/in/raghav-sharma-884750307/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn fw-semibold px-4 py-2"
+                        style={{ backgroundColor: "#14E0A1", color: "black" }}
+                      >
+                        View LinkedIn Profile
+                      </a>
+                    </div>
                   </div>
-
-                  <div className="mb-4">
-                    <label htmlFor="message" className="form-label">
-                      💬 Message
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows={5}
-                      className="form-control bg-secondary border-0 text-white"
-                      required
-                    />
-                  </div>
-
-                  <button
-                    className="btn w-100 fw-semibold py-3"
-                    style={{ backgroundColor: "#14E0A1", color: "black" }}
-                  >
-                    Send Message
-                  </button>
                 </div>
               </div>
             </div>
@@ -587,7 +591,10 @@ const SinglePagePortfolio = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black py-4 position-relative" style={{ zIndex: 1 }}>
+      <footer
+        className="py-4 position-relative"
+        style={{ backgroundColor: "#0B0F2F", borderRadius: "100px" }}
+      >
         <div className="container text-center">
           <div className="mb-3">
             <span className="fw-bold fs-4" style={{ color: "#14E0A1" }}>
