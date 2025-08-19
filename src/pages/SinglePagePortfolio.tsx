@@ -1,7 +1,7 @@
 import "./SinglePagePortfolio.css";
 
 const SinglePagePortfolio = () => {
-  const scrollToSection = (sectionId) => {
+  const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
   };
 
