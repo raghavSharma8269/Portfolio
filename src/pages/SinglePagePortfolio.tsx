@@ -1,5 +1,6 @@
 import "./SinglePagePortfolio.css";
 import JobVaultImage from "../assets/projectImages/JobVaultLightPurple.svg";
+import OverCoffeeImage from "../assets/projectImages/overCoffeeCreme-D_-bYlWA.svg";
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import {
@@ -494,7 +495,61 @@ const SinglePagePortfolio = () => {
             <h3 className="fs-3 fw-bold">Featured Projects</h3>
           </div>
 
-          <div className="row justify-content-center">
+          {/* Projects Container with Gap */}
+          <div className="row justify-content-center g-5">
+            {/* First Project */}
+            <div className="col-lg-10">
+              <div className="card bg-dark border-white">
+                <div className="card-body p-4">
+                  <div className="row align-items-center">
+                    <div className="col-lg-6 text-center mb-4 mb-lg-0">
+                      <div className="rounded p-5">
+                        <img
+                          src={OverCoffeeImage}
+                          alt="OverCoffee Project"
+                          className="img-fluid rounded"
+                          style={{ maxWidth: "100%", height: "auto" }}
+                        />
+                      </div>
+                    </div>
+                    <div className="col-lg-6">
+                      <h4 className="fw-bold mb-3" style={{ color: "#14E0A1" }}>
+                        OverCoffeeAI
+                      </h4>
+                      <p className="text-white mb-4">
+                        At Over Coffee, I led the backend engineering efforts
+                        for a mental health and AI platform built from the
+                        ground up. I was responsible for designing and
+                        implementing a scalable backend architecture using Java
+                        and Spring Boot, with a focus on clean code, modularity,
+                        and long term maintainability. I built and secured our
+                        authentication system, developed custom RESTful APIs to
+                        connect with the frontend, and integrated a PostgreSQL
+                        database for persistent user data storage.
+                        <br />
+                        <br />I also worked closely with the frontend team to
+                        ensure seamless communication between services,
+                        troubleshoot integration challenges, and deploy the
+                        application to a cloud environment using Render. My work
+                        helped ensure the platform's core functionality was
+                        stable, efficient, and production ready.
+                      </p>
+                      <a
+                        href="https://overcoffee.ai/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn fw-semibold px-4 py-2"
+                        style={{ backgroundColor: "#14E0A1", color: "black" }}
+                      >
+                        View Project →
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Second Project */}
             <div className="col-lg-10">
               <div className="card bg-dark border-white">
                 <div className="card-body p-4">
