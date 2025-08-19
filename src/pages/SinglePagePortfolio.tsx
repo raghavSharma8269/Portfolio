@@ -13,6 +13,13 @@ import { loadSlim } from "@tsparticles/slim";
 
 const SinglePagePortfolio = () => {
   const [init, setInit] = useState(false);
+  const [sectionsVisible, setSectionsVisible] = useState({
+    hero: false,
+    about: false,
+    services: false,
+    portfolio: false,
+    contact: false,
+  });
 
   // Initialize particles engine
   useEffect(() => {
@@ -21,6 +28,35 @@ const SinglePagePortfolio = () => {
     }).then(() => {
       setInit(true);
     });
+  }, []);
+
+  // Animation observer for sections
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const sectionId = entry.target.id;
+            setSectionsVisible((prev) => ({
+              ...prev,
+              [sectionId]: true,
+            }));
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
+    );
+
+    // Observe all sections
+    const sections = document.querySelectorAll("section[id]");
+    sections.forEach((section) => observer.observe(section));
+
+    // Trigger hero animation immediately
+    setSectionsVisible((prev) => ({ ...prev, hero: true }));
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
+    };
   }, []);
 
   const particlesLoaded = async (container?: Container): Promise<void> => {
@@ -234,12 +270,23 @@ const SinglePagePortfolio = () => {
       {/* Hero Section */}
       <section
         id="hero"
-        className="min-vh-100 d-flex align-items-center position-relative"
-        style={{ paddingTop: "80px" }}
+        className={`min-vh-100 d-flex align-items-center position-relative ${
+          sectionsVisible.hero
+            ? "animate__animated animate__fadeInUp"
+            : "opacity-0"
+        }`}
+        style={{ paddingTop: "80px", animationDuration: "1s" }}
       >
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6">
+            <div
+              className={`col-lg-6 ${
+                sectionsVisible.hero
+                  ? "animate__animated animate__fadeInLeft"
+                  : "opacity-0"
+              }`}
+              style={{ animationDelay: "0.3s", animationDuration: "1s" }}
+            >
               <h1 className="display-3 fw-bold lh-1 mb-4">
                 Hi, I'm <span style={{ color: "#14E0A1" }}>Raghav Sharma</span>{" "}
                 - Full Stack Developer
@@ -269,7 +316,14 @@ const SinglePagePortfolio = () => {
                 </button>
               </div>
             </div>
-            <div className="col-lg-6 mt-5 mt-lg-0 text-center">
+            <div
+              className={`col-lg-6 mt-5 mt-lg-0 text-center ${
+                sectionsVisible.hero
+                  ? "animate__animated animate__fadeInRight"
+                  : "opacity-0"
+              }`}
+              style={{ animationDelay: "0.6s", animationDuration: "1s" }}
+            >
               <div className="position-relative">
                 <div
                   className="rounded-circle mx-auto mb-4 d-flex align-items-center justify-content-center"
@@ -308,7 +362,15 @@ const SinglePagePortfolio = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-5 position-relative">
+      <section
+        id="about"
+        className={`py-5 position-relative ${
+          sectionsVisible.about
+            ? "animate__animated animate__fadeInUp"
+            : "opacity-0"
+        }`}
+        style={{ animationDuration: "1s" }}
+      >
         <div className="container">
           <div className="text-center mb-5">
             <h2 className="display-4 fw-bold mb-4" style={{ color: "#14E0A1" }}>
@@ -325,7 +387,14 @@ const SinglePagePortfolio = () => {
             </p>
           </div>
 
-          <div className="row g-4 mt-5">
+          <div
+            className={`row g-4 mt-5 ${
+              sectionsVisible.about
+                ? "animate__animated animate__fadeInUp"
+                : "opacity-0"
+            }`}
+            style={{ animationDelay: "0.3s", animationDuration: "1s" }}
+          >
             <div className="col-md-6 col-lg-3 text-center">
               <div
                 className="rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center"
@@ -399,7 +468,15 @@ const SinglePagePortfolio = () => {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-5 position-relative">
+      <section
+        id="services"
+        className={`py-5 position-relative ${
+          sectionsVisible.services
+            ? "animate__animated animate__fadeInUp"
+            : "opacity-0"
+        }`}
+        style={{ animationDuration: "1s" }}
+      >
         <div className="container">
           <div className="text-center mb-5">
             <h2 className="display-4 fw-bold mb-4" style={{ color: "#14E0A1" }}>
@@ -414,7 +491,14 @@ const SinglePagePortfolio = () => {
             </p>
           </div>
 
-          <div className="row g-4">
+          <div
+            className={`row g-4 ${
+              sectionsVisible.services
+                ? "animate__animated animate__fadeInUp"
+                : "opacity-0"
+            }`}
+            style={{ animationDelay: "0.3s", animationDuration: "1s" }}
+          >
             <div className="col-md-6 col-lg-4">
               <div className="card bg-dark border-white h-100 hover-card">
                 <div className="card-body p-4">
@@ -468,7 +552,15 @@ const SinglePagePortfolio = () => {
       </section>
 
       {/* Portfolio Section */}
-      <section id="portfolio" className="py-5 position-relative">
+      <section
+        id="portfolio"
+        className={`py-5 position-relative ${
+          sectionsVisible.portfolio
+            ? "animate__animated animate__fadeInUp"
+            : "opacity-0"
+        }`}
+        style={{ animationDuration: "1s" }}
+      >
         <div className="container">
           <div className="text-center mb-5">
             <h2 className="display-4 fw-bold mb-4" style={{ color: "#14E0A1" }}>
@@ -496,7 +588,14 @@ const SinglePagePortfolio = () => {
           </div>
 
           {/* Projects Container with Gap */}
-          <div className="row justify-content-center g-5">
+          <div
+            className={`row justify-content-center g-5 ${
+              sectionsVisible.portfolio
+                ? "animate__animated animate__fadeInUp"
+                : "opacity-0"
+            }`}
+            style={{ animationDelay: "0.3s", animationDuration: "1s" }}
+          >
             {/* First Project */}
             <div className="col-lg-10">
               <div className="card bg-dark border-white">
@@ -506,7 +605,7 @@ const SinglePagePortfolio = () => {
                       <div className="rounded p-5">
                         <img
                           src={OverCoffeeImage}
-                          alt="OverCoffee Project"
+                          alt="OverCoffeeAI Project"
                           className="img-fluid rounded"
                           style={{ maxWidth: "100%", height: "auto" }}
                         />
@@ -527,11 +626,11 @@ const SinglePagePortfolio = () => {
                         connect with the frontend, and integrated a PostgreSQL
                         database for persistent user data storage.
                         <br />
-                        <br />I also worked closely with the frontend team to
+                        <br /> I also worked closely with the frontend team to
                         ensure seamless communication between services,
                         troubleshoot integration challenges, and deploy the
                         application to a cloud environment using Render. My work
-                        helped ensure the platform's core functionality was
+                        helped ensure the platform’s core functionality was
                         stable, efficient, and production ready.
                       </p>
                       <a
@@ -595,7 +694,15 @@ const SinglePagePortfolio = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-5 position-relative">
+      <section
+        id="contact"
+        className={`py-5 position-relative ${
+          sectionsVisible.contact
+            ? "animate__animated animate__fadeInUp"
+            : "opacity-0"
+        }`}
+        style={{ animationDuration: "1s" }}
+      >
         <div className="container">
           <div className="text-center mb-5">
             <h2 className="display-4 fw-bold mb-4" style={{ color: "#14E0A1" }}>
@@ -609,7 +716,14 @@ const SinglePagePortfolio = () => {
           </div>
 
           <div className="row justify-content-center">
-            <div className="col-md-8">
+            <div
+              className={`col-md-8 ${
+                sectionsVisible.contact
+                  ? "animate__animated animate__fadeInUp"
+                  : "opacity-0"
+              }`}
+              style={{ animationDelay: "0.3s", animationDuration: "1s" }}
+            >
               <div className="row g-4">
                 {/* Email Card */}
                 <div className="col-md-6">
