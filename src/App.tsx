@@ -5,6 +5,7 @@ import ContactPage from "./pages/ContactPage";
 import ServicesPage from "./pages/ServicesPage";
 import PortfolioPage from "./pages/PortfolioPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import SinglePagePortfolio from "./pages/SinglePagePortfolio";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
+          <Route path="/main" element={<SinglePagePortfolio />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Router>
