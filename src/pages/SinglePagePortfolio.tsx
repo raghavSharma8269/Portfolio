@@ -1,4 +1,5 @@
 import "./SinglePagePortfolio.css";
+import JobVaultImage from "../assets/projectImages/JobVaultLightPurple.svg";
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import {
@@ -499,15 +500,13 @@ const SinglePagePortfolio = () => {
                 <div className="card-body p-4">
                   <div className="row align-items-center">
                     <div className="col-lg-6 text-center mb-4 mb-lg-0">
-                      <div
-                        className="rounded p-5"
-                        style={{
-                          background:
-                            "linear-gradient(135deg, #007bff 0%, #6f42c1 100%)",
-                        }}
-                      >
-                        <span className="fs-1 text-white">💼</span>
-                        <h4 className="fw-bold text-white mt-3">JobVault</h4>
+                      <div className="rounded p-5">
+                        <img
+                          src={JobVaultImage}
+                          alt="JobVault Project"
+                          className="img-fluid rounded"
+                          style={{ maxWidth: "100%", height: "auto" }}
+                        />
                       </div>
                     </div>
                     <div className="col-lg-6">
