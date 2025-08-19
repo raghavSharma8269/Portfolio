@@ -794,7 +794,7 @@ const SinglePagePortfolio = () => {
             </span>
           </div>
           <p className="text-white mb-0">
-            © 2025 Raghav Sharma. All rights reserved. | Full Stack Developer
+            © 2025 Raghav Sharma. All rights reserved.
           </p>
         </div>
       </footer>
