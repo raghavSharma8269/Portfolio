@@ -797,6 +797,20 @@ const SinglePagePortfolio = () => {
                       >
                         View Project →
                       </a>
+                      <br />
+                      <a
+                        href="https://github.com/raghavSharma8269/JobVault"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn fw-semibold px-4 py-2 mt-4"
+                        style={{
+                          backgroundColor: "transparent",
+                          color: "#14E0A1",
+                          border: "1px solid #14E0A1",
+                        }}
+                      >
+                        View GitHub →
+                      </a>
                     </div>
                   </div>
                 </div>
