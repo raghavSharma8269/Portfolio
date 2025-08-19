@@ -737,7 +737,7 @@ const SinglePagePortfolio = () => {
                       </div>
                       <h5 className="card-title fw-bold mb-3">Email</h5>
                       <p className="card-text text-white mb-3">
-                        Let's discuss your next project
+                        Reach me at my email
                       </p>
                       <a
                         href="mailto:r.sharmali2023@gmail.com"
