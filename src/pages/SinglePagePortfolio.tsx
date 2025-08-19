@@ -419,7 +419,7 @@ const SinglePagePortfolio = () => {
                   <div className="mb-3">
                     <span className="fs-1">💻</span>
                   </div>
-                  <h5 className="card-title fw-bold mb-3">
+                  <h5 className="card-title fw-bold mb-3 text-white">
                     Frontend Development
                   </h5>
                   <p className="card-text text-white">
@@ -436,11 +436,11 @@ const SinglePagePortfolio = () => {
                   <div className="mb-3">
                     <span className="fs-1">⚙️</span>
                   </div>
-                  <h5 className="card-title fw-bold mb-3">
+                  <h5 className="card-title fw-bold mb-3 text-white">
                     Backend Development
                   </h5>
                   <p className="card-text text-white">
-                    Java, Spring Boot, REST APIs, database design, and
+                    Java, Spring Boot, REST APIs, SQL, Database Design, and
                     server-side development for robust, scalable applications.
                   </p>
                 </div>
@@ -452,11 +452,11 @@ const SinglePagePortfolio = () => {
                   <div className="mb-3">
                     <span className="fs-1">🛠️</span>
                   </div>
-                  <h5 className="card-title fw-bold mb-3">Development Tools</h5>
+                  <h5 className="card-title fw-bold mb-3 text-white">
+                    Development Tools
+                  </h5>
                   <p className="card-text text-white">
-                    Git, VS Code, IntelliJ IDEA, Docker, deployment platforms,
-                    and modern development workflows for efficient project
-                    delivery.
+                    Git, Docker, AWS, Postman, VS Code, IntelliJ IDEA
                   </p>
                 </div>
               </div>
