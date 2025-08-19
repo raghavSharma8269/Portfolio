@@ -1,4 +1,7 @@
-/* SinglePagePortfolio.css */
+* {
+  font-family: "Quantico", -apple-system, BlinkMacSystemFont, "Roboto",
+    sans-serif;
+}
 
 @keyframes pulse {
   0%,
