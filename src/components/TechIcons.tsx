@@ -75,7 +75,3 @@ export const PostgresIcon = ({ width = 48, height = 48 }) => (
     />
   </svg>
 );
-
-// export const SpringIcon = ({ width = 48, height = 48 }) => (
-
-// );
