@@ -10,6 +10,30 @@ import {
   OutMode,
 } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
+import {
+  // Backend Technologies
+  JavaIcon,
+  SpringIcon,
+  PostgresIcon,
+  CSharpIcon,
+  DotNetIcon,
+  PythonIcon,
+  FastAPIIcon,
+  // Frontend Technologies
+  ReactIcon,
+  JavaScriptIcon,
+  TypeScriptIcon,
+  HtmlIcon,
+  CssIcon,
+  BootstrapIcon,
+  // Development Tools
+  GitIcon,
+  DockerIcon,
+  AwsIcon,
+  PostmanIcon,
+  VsCodeIcon,
+  IntellijIcon,
+} from "../components/TechIcons";
 
 const SinglePagePortfolio = () => {
   const [init, setInit] = useState(false);
@@ -508,10 +532,42 @@ const SinglePagePortfolio = () => {
                   <h5 className="card-title fw-bold mb-3 text-white">
                     Backend Development
                   </h5>
-                  <p className="card-text text-white">
-                    Java, Spring Boot, REST APIs, SQL, Database Design, and
-                    server-side development for robust, scalable applications.
+                  <p className="card-text text-white mb-3">
+                    Server-side development, APIs, databases, and scalable
+                    backend architecture for robust applications.
                   </p>
+
+                  {/* Backend Technology Pills */}
+                  <div className="d-flex flex-wrap gap-2">
+                    <div className="d-flex align-items-center bg-secondary rounded-pill px-3 py-2">
+                      <JavaIcon width={18} height={18} />
+                      <span className="text-white ms-2 small">Java</span>
+                    </div>
+                    <div className="d-flex align-items-center bg-secondary rounded-pill px-3 py-2">
+                      <SpringIcon width={18} height={18} />
+                      <span className="text-white ms-2 small">Spring Boot</span>
+                    </div>
+                    <div className="d-flex align-items-center bg-secondary rounded-pill px-3 py-2">
+                      <PostgresIcon width={18} height={18} />
+                      <span className="text-white ms-2 small">PostgreSQL</span>
+                    </div>
+                    <div className="d-flex align-items-center bg-secondary rounded-pill px-3 py-2">
+                      <PythonIcon width={18} height={18} />
+                      <span className="text-white ms-2 small">Python</span>
+                    </div>
+                    <div className="d-flex align-items-center bg-secondary rounded-pill px-3 py-2">
+                      <FastAPIIcon width={18} height={18} />
+                      <span className="text-white ms-2 small">FastAPI</span>
+                    </div>
+                    <div className="d-flex align-items-center bg-secondary rounded-pill px-3 py-2">
+                      <CSharpIcon width={18} height={18} />
+                      <span className="text-white ms-2 small">C#</span>
+                    </div>
+                    <div className="d-flex align-items-center bg-secondary rounded-pill px-3 py-2">
+                      <DotNetIcon width={18} height={18} />
+                      <span className="text-white ms-2 small">.NET</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -524,11 +580,38 @@ const SinglePagePortfolio = () => {
                   <h5 className="card-title fw-bold mb-3 text-white">
                     Frontend Development
                   </h5>
-                  <p className="card-text text-white">
-                    React, TypeScript, HTML5, CSS3, Bootstrap, and modern
-                    JavaScript frameworks for creating responsive, interactive
-                    user interfaces.
+                  <p className="card-text text-white mb-3">
+                    Modern web interfaces, responsive design, and interactive
+                    user experiences with cutting-edge frameworks.
                   </p>
+
+                  {/* Frontend Technology Pills */}
+                  <div className="d-flex flex-wrap gap-2">
+                    <div className="d-flex align-items-center bg-secondary rounded-pill px-3 py-2">
+                      <ReactIcon width={18} height={18} />
+                      <span className="text-white ms-2 small">React</span>
+                    </div>
+                    <div className="d-flex align-items-center bg-secondary rounded-pill px-3 py-2">
+                      <TypeScriptIcon width={18} height={18} />
+                      <span className="text-white ms-2 small">TypeScript</span>
+                    </div>
+                    <div className="d-flex align-items-center bg-secondary rounded-pill px-3 py-2">
+                      <JavaScriptIcon width={18} height={18} />
+                      <span className="text-white ms-2 small">JavaScript</span>
+                    </div>
+                    <div className="d-flex align-items-center bg-secondary rounded-pill px-3 py-2">
+                      <HtmlIcon width={18} height={18} />
+                      <span className="text-white ms-2 small">HTML5</span>
+                    </div>
+                    <div className="d-flex align-items-center bg-secondary rounded-pill px-3 py-2">
+                      <CssIcon width={18} height={18} />
+                      <span className="text-white ms-2 small">CSS3</span>
+                    </div>
+                    <div className="d-flex align-items-center bg-secondary rounded-pill px-3 py-2">
+                      <BootstrapIcon width={18} height={18} />
+                      <span className="text-white ms-2 small">Bootstrap</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -542,9 +625,38 @@ const SinglePagePortfolio = () => {
                   <h5 className="card-title fw-bold mb-3 text-white">
                     Development Tools
                   </h5>
-                  <p className="card-text text-white">
-                    Git, Docker, AWS, Postman, VS Code, IntelliJ IDEA
+                  <p className="card-text text-white mb-3">
+                    Essential development tools, cloud platforms, and IDEs for
+                    efficient workflow and deployment.
                   </p>
+
+                  {/* Development Tools Pills */}
+                  <div className="d-flex flex-wrap gap-2">
+                    <div className="d-flex align-items-center bg-secondary rounded-pill px-3 py-2">
+                      <GitIcon width={18} height={18} />
+                      <span className="text-white ms-2 small">Git</span>
+                    </div>
+                    <div className="d-flex align-items-center bg-secondary rounded-pill px-3 py-2">
+                      <DockerIcon width={18} height={18} />
+                      <span className="text-white ms-2 small">Docker</span>
+                    </div>
+                    <div className="d-flex align-items-center bg-secondary rounded-pill px-3 py-2">
+                      <AwsIcon width={18} height={18} />
+                      <span className="text-white ms-2 small">AWS</span>
+                    </div>
+                    <div className="d-flex align-items-center bg-secondary rounded-pill px-3 py-2">
+                      <PostmanIcon width={18} height={18} />
+                      <span className="text-white ms-2 small">Postman</span>
+                    </div>
+                    <div className="d-flex align-items-center bg-secondary rounded-pill px-3 py-2">
+                      <VsCodeIcon width={18} height={18} />
+                      <span className="text-white ms-2 small">VS Code</span>
+                    </div>
+                    <div className="d-flex align-items-center bg-secondary rounded-pill px-3 py-2">
+                      <IntellijIcon width={18} height={18} />
+                      <span className="text-white ms-2 small">IntelliJ</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -631,7 +743,7 @@ const SinglePagePortfolio = () => {
                         ensure seamless communication between services,
                         troubleshoot integration challenges, and deploy the
                         application to a cloud environment using Render. My work
-                        helped ensure the platform’s core functionality was
+                        helped ensure the platform's core functionality was
                         stable, efficient, and production ready.
                       </p>
                       <a
