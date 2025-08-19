@@ -200,6 +200,30 @@ const SinglePagePortfolio = () => {
                   Contact
                 </button>
               </li>
+
+              {/* Social Icons */}
+              <li className="nav-item ms-3">
+                <a
+                  href="https://github.com/raghavSharma8269"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="nav-link text-white d-inline-flex align-items-center"
+                  style={{ padding: "8px 12px" }}
+                >
+                  <i className="bi bi-github fs-5"></i>
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  href="https://www.linkedin.com/in/raghav-sharma-884750307/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="nav-link text-white d-inline-flex align-items-center"
+                  style={{ padding: "8px 12px" }}
+                >
+                  <i className="bi bi-linkedin fs-5"></i>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
