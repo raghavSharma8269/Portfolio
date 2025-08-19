@@ -348,26 +348,7 @@ const SinglePagePortfolio = () => {
               }`}
               style={{ animationDelay: "0.6s", animationDuration: "1s" }}
             >
-              <div className="position-relative">
-                <div
-                  className="rounded-circle mx-auto mb-4 d-flex align-items-center justify-content-center"
-                  style={{
-                    width: "200px",
-                    height: "200px",
-                    background:
-                      "linear-gradient(135deg, #14E0A1 0%, #00bcd4 100%)",
-                    animation: "pulse 2s infinite",
-                  }}
-                >
-                  <i
-                    className="bi bi-code-slash"
-                    style={{ fontSize: "6rem", color: "white" }}
-                  />
-                </div>
-                <h3 className="fs-4 fw-bold" style={{ color: "#14E0A1" }}>
-                  Excellence in Code
-                </h3>
-              </div>
+              <div className="position-relative"></div>
             </div>
           </div>
           <div className="text-center mt-5">
