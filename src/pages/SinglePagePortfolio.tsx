@@ -68,7 +68,7 @@ const SinglePagePortfolio = () => {
             default: OutMode.out,
           },
           random: true,
-          speed: 0.3,
+          speed: 0.7,
           straight: false,
         },
         number: {
@@ -81,7 +81,7 @@ const SinglePagePortfolio = () => {
           value: { min: 0.3, max: 1 },
           animation: {
             enable: true,
-            speed: 0.3,
+            speed: 0.7,
             sync: false,
           },
         },
@@ -92,7 +92,7 @@ const SinglePagePortfolio = () => {
           value: { min: 1, max: 4 },
           animation: {
             enable: true,
-            speed: 0.3,
+            speed: 0.7,
             sync: false,
           },
         },
