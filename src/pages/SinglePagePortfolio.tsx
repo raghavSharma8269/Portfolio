@@ -1,16 +1,144 @@
 import "./SinglePagePortfolio.css";
+import { useEffect, useMemo, useState } from "react";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import {
+  type Container,
+  type ISourceOptions,
+  MoveDirection,
+  OutMode,
+} from "@tsparticles/engine";
+import { loadSlim } from "@tsparticles/slim";
 
 const SinglePagePortfolio = () => {
+  const [init, setInit] = useState(false);
+
+  // Initialize particles engine
+  useEffect(() => {
+    initParticlesEngine(async (engine) => {
+      await loadSlim(engine);
+    }).then(() => {
+      setInit(true);
+    });
+  }, []);
+
+  const particlesLoaded = async (container?: Container): Promise<void> => {
+    console.log(container);
+  };
+
+  // Sparkling stars configuration
+  const options: ISourceOptions = useMemo(
+    () => ({
+      background: {
+        color: {
+          value: "transparent",
+        },
+      },
+      fpsLimit: 120,
+      interactivity: {
+        events: {
+          onClick: {
+            enable: true,
+            mode: "push",
+          },
+          onHover: {
+            enable: true,
+            mode: "bubble",
+          },
+        },
+        modes: {
+          push: {
+            quantity: 4,
+          },
+          bubble: {
+            distance: 200,
+            duration: 2,
+            opacity: 1,
+            size: 8,
+          },
+        },
+      },
+      particles: {
+        color: {
+          value: ["#14E0A1", "#00bcd4", "#ffffff"],
+        },
+        move: {
+          direction: MoveDirection.none,
+          enable: true,
+          outModes: {
+            default: OutMode.out,
+          },
+          random: true,
+          speed: 0.3,
+          straight: false,
+        },
+        number: {
+          density: {
+            enable: true,
+          },
+          value: 100,
+        },
+        opacity: {
+          value: { min: 0.3, max: 1 },
+          animation: {
+            enable: true,
+            speed: 0.3,
+            sync: false,
+          },
+        },
+        shape: {
+          type: ["star", "circle"],
+        },
+        size: {
+          value: { min: 1, max: 4 },
+          animation: {
+            enable: true,
+            speed: 0.3,
+            sync: false,
+          },
+        },
+        twinkle: {
+          particles: {
+            enable: true,
+            frequency: 0.05,
+            opacity: 1,
+            color: {
+              value: "#14E0A1",
+            },
+          },
+        },
+      },
+      detectRetina: true,
+    }),
+    []
+  );
   const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <div>
+    <div className="position-relative">
+      {/* TSParticles Background */}
+      {init && (
+        <Particles
+          id="tsparticles"
+          particlesLoaded={particlesLoaded}
+          options={options}
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            zIndex: 1,
+            pointerEvents: "none",
+          }}
+        />
+      )}
+
       {/* Navigation */}
       <nav
         className="navbar navbar-expand-lg navbar-dark fixed-top border-bottom"
-        style={{ backgroundColor: "#0B0F2F" }}
+        style={{ backgroundColor: "#0B0F2F", zIndex: 1000 }}
       >
         <div className="container">
           <a
@@ -53,7 +181,7 @@ const SinglePagePortfolio = () => {
                   className="nav-link btn btn-link text-white"
                   onClick={() => scrollToSection("services")}
                 >
-                  Services
+                  Skills
                 </button>
               </li>
               <li className="nav-item">
@@ -80,7 +208,7 @@ const SinglePagePortfolio = () => {
       {/* Hero Section */}
       <section
         id="hero"
-        className="min-vh-100 d-flex align-items-center"
+        className="min-vh-100 d-flex align-items-center position-relative"
         style={{ paddingTop: "80px" }}
       >
         <div className="container">
@@ -154,7 +282,7 @@ const SinglePagePortfolio = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-5">
+      <section id="about" className="py-5 position-relative">
         <div className="container">
           <div className="text-center mb-5">
             <h2 className="display-4 fw-bold mb-4" style={{ color: "#14E0A1" }}>
@@ -245,7 +373,7 @@ const SinglePagePortfolio = () => {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-5">
+      <section id="services" className="py-5 position-relative">
         <div className="container">
           <div className="text-center mb-5">
             <h2 className="display-4 fw-bold mb-4" style={{ color: "#14E0A1" }}>
@@ -314,7 +442,7 @@ const SinglePagePortfolio = () => {
       </section>
 
       {/* Portfolio Section */}
-      <section id="portfolio" className="py-5">
+      <section id="portfolio" className="py-5 position-relative">
         <div className="container">
           <div className="text-center mb-5">
             <h2 className="display-4 fw-bold mb-4" style={{ color: "#14E0A1" }}>
@@ -389,7 +517,7 @@ const SinglePagePortfolio = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-5">
+      <section id="contact" className="py-5 position-relative">
         <div className="container">
           <div className="text-center mb-5">
             <h2 className="display-4 fw-bold mb-4" style={{ color: "#14E0A1" }}>
@@ -414,7 +542,7 @@ const SinglePagePortfolio = () => {
                       type="text"
                       id="name"
                       name="name"
-                      className="form-control bg-white border-0 text-white"
+                      className="form-control bg-secondary border-0 text-white"
                       required
                     />
                   </div>
@@ -427,7 +555,7 @@ const SinglePagePortfolio = () => {
                       type="email"
                       id="email"
                       name="email"
-                      className="form-control bg-white border-0 text-white"
+                      className="form-control bg-secondary border-0 text-white"
                       required
                     />
                   </div>
@@ -440,7 +568,7 @@ const SinglePagePortfolio = () => {
                       id="message"
                       name="message"
                       rows={5}
-                      className="form-control bg-white border-0 text-white"
+                      className="form-control bg-secondary border-0 text-white"
                       required
                     />
                   </div>
@@ -459,15 +587,15 @@ const SinglePagePortfolio = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black py-4">
+      <footer className="bg-black py-4 position-relative" style={{ zIndex: 1 }}>
         <div className="container text-center">
           <div className="mb-3">
             <span className="fw-bold fs-4" style={{ color: "#14E0A1" }}>
-              DevTeam
+              Raghav Sharma
             </span>
           </div>
           <p className="text-white mb-0">
-            © 2025 DevTeam. All rights reserved. | Passionate Software Solutions
+            © 2025 Raghav Sharma. All rights reserved. | Full Stack Developer
           </p>
         </div>
       </footer>
