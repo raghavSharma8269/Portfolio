@@ -904,6 +904,27 @@ const SinglePagePortfolio = () => {
           <p className="text-white mb-0">
             © 2025 Raghav Sharma. All rights reserved.
           </p>
+          <div>
+            {/* Social Icons */}
+            <a
+              href="https://github.com/raghavSharma8269"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav-link text-white d-inline-flex align-items-center"
+              style={{ padding: "8px 12px" }}
+            >
+              <i className="bi bi-github fs-5"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/raghav-sharma-884750307/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav-link text-white d-inline-flex align-items-center"
+              style={{ padding: "8px 12px" }}
+            >
+              <i className="bi bi-linkedin fs-5"></i>
+            </a>
+          </div>
         </div>
       </footer>
     </div>
