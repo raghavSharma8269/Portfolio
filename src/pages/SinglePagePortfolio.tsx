@@ -765,9 +765,9 @@ const SinglePagePortfolio = () => {
                         JobVault is a comprehensive web application I developed
                         to help job seekers organize and track their
                         applications. Features include resume and cover letter
-                        management, application status tracking, and intuitive
-                        dashboard views. Built with Java, Spring Boot, React,
-                        and TypeScript.
+                        management/feedback, application status tracking and
+                        sorting, and intuitive dashboard views. Built with Java,
+                        Spring Boot, React, and TypeScript.
                       </p>
                       <a
                         href="https://job-vault-livid.vercel.app/welcome"
