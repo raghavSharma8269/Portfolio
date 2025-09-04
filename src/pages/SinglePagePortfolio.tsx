@@ -723,9 +723,9 @@ const SinglePagePortfolio = () => {
                         <br /> I also worked closely with the frontend team to
                         ensure seamless communication between services,
                         troubleshoot integration challenges, and deploy the
-                        application to a cloud environment using Render. My work
-                        helped ensure the platform's core functionality was
-                        stable, efficient, and production ready.
+                        application to a cloud environment using AWS and Docker.
+                        My work helped ensure the platform's core functionality
+                        was stable, efficient, and production ready.
                       </p>
                       <a
                         href="https://overcoffee.ai/"
