@@ -25,7 +25,6 @@ import {
   TypeScriptIcon,
   HtmlIcon,
   CssIcon,
-  BootstrapIcon,
   // Development Tools
   GitIcon,
   DockerIcon,
@@ -313,15 +312,13 @@ const SinglePagePortfolio = () => {
             >
               <h1 className="display-3 fw-bold lh-1 mb-4">
                 Hi, I'm <span style={{ color: "#14E0A1" }}>Raghav Sharma</span>{" "}
-                - Full Stack Developer
               </h1>
               <p className="fs-5 text-white mb-4">
                 <strong className="text-white">
-                  Passionate about creating innovative software solutions.
+                  Passionate about creating software.
                 </strong>{" "}
-                I specialize in building modern web applications using React,
-                TypeScript, Java, and Spring Boot. I deliver high-quality,
-                scalable solutions that solve real-world problems.
+                I specialize in building backends using, Java, and Spring Boot
+                and have expriece in React and Typescript frontends.
               </p>
               <div className="d-flex flex-column flex-sm-row gap-3">
                 <button
@@ -362,112 +359,6 @@ const SinglePagePortfolio = () => {
             >
               <i className="bi bi-arrow-down-circle" />
             </button>
-          </div>
-        </div>
-      </section>
-
-      {/* About Section */}
-      <section
-        id="about"
-        className={`py-5 position-relative ${
-          sectionsVisible.about
-            ? "animate__animated animate__fadeInUp"
-            : "opacity-0"
-        }`}
-        style={{ animationDuration: "1s" }}
-      >
-        <div className="container">
-          <div className="text-center mb-5">
-            <h2 className="display-4 fw-bold mb-4" style={{ color: "#14E0A1" }}>
-              About Me
-            </h2>
-            <p
-              className="fs-5 text-white mx-auto"
-              style={{ maxWidth: "800px" }}
-            >
-              I'm a passionate full-stack developer with a love for creating
-              innovative software solutions. I believe in writing clean,
-              efficient code and delivering exceptional user experiences that
-              make a real impact.
-            </p>
-          </div>
-
-          <div
-            className={`row g-4 mt-5 ${
-              sectionsVisible.about
-                ? "animate__animated animate__fadeInUp"
-                : "opacity-0"
-            }`}
-            style={{ animationDelay: "0.3s", animationDuration: "1s" }}
-          >
-            <div className="col-md-6 col-lg-3 text-center">
-              <div
-                className="rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center"
-                style={{
-                  width: "80px",
-                  height: "80px",
-                  backgroundColor: "#14E0A1",
-                }}
-              >
-                <span className="fs-3 text-dark">🤝</span>
-              </div>
-              <h5 className="fw-bold">Problem Solving</h5>
-              <p className="text-white">
-                I love tackling complex challenges and finding elegant solutions
-                to technical problems.
-              </p>
-            </div>
-            <div className="col-md-6 col-lg-3 text-center">
-              <div
-                className="rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center"
-                style={{
-                  width: "80px",
-                  height: "80px",
-                  backgroundColor: "#14E0A1",
-                }}
-              >
-                <span className="fs-3 text-dark">💡</span>
-              </div>
-              <h5 className="fw-bold">Innovation</h5>
-              <p className="text-white">
-                I stay current with latest technologies and embrace creative
-                approaches to development.
-              </p>
-            </div>
-            <div className="col-md-6 col-lg-3 text-center">
-              <div
-                className="rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center"
-                style={{
-                  width: "80px",
-                  height: "80px",
-                  backgroundColor: "#14E0A1",
-                }}
-              >
-                <span className="fs-3 text-dark">🎯</span>
-              </div>
-              <h5 className="fw-bold">User-Focused</h5>
-              <p className="text-white">
-                I prioritize creating intuitive, accessible experiences that
-                users love to interact with.
-              </p>
-            </div>
-            <div className="col-md-6 col-lg-3 text-center">
-              <div
-                className="rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center"
-                style={{
-                  width: "80px",
-                  height: "80px",
-                  backgroundColor: "#14E0A1",
-                }}
-              >
-                <span className="fs-3 text-dark">🚀</span>
-              </div>
-              <h5 className="fw-bold">Continuous Learning</h5>
-              <p className="text-white">
-                I'm always learning new technologies and improving my skills to
-                deliver better solutions.
-              </p>
-            </div>
           </div>
         </div>
       </section>
@@ -588,10 +479,6 @@ const SinglePagePortfolio = () => {
                       <CssIcon width={18} height={18} />
                       <span className="text-white ms-2 small">CSS3</span>
                     </div>
-                    <div className="d-flex align-items-center bg-secondary rounded-pill px-3 py-2">
-                      <BootstrapIcon width={18} height={18} />
-                      <span className="text-white ms-2 small">Bootstrap</span>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -660,27 +547,7 @@ const SinglePagePortfolio = () => {
             <h2 className="display-4 fw-bold mb-4" style={{ color: "#14E0A1" }}>
               My Portfolio
             </h2>
-            <p
-              className="fs-5 text-white mx-auto"
-              style={{ maxWidth: "700px" }}
-            >
-              Here are some of the projects I've built that showcase my skills
-              and passion for development
-            </p>
           </div>
-
-          <div className="text-center mb-4">
-            <p className="text-white mx-auto" style={{ maxWidth: "800px" }}>
-              Each project represents a unique challenge I've tackled, from
-              concept to deployment. I focus on creating applications that are
-              not only functional but also provide exceptional user experiences.
-            </p>
-          </div>
-
-          <div className="text-center mb-5">
-            <h3 className="fs-3 fw-bold">Featured Projects</h3>
-          </div>
-
           {/* Projects Container with Gap */}
           <div
             className={`row justify-content-center g-5 ${
