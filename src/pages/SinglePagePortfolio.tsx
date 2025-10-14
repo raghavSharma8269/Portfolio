@@ -317,8 +317,8 @@ const SinglePagePortfolio = () => {
                 <strong className="text-white">
                   Passionate about creating software.
                 </strong>{" "}
-                I specialize in building backends using, Java, and Spring Boot
-                and have expriece in React and Typescript frontends.
+                I specialize in building backends using, Java Spring Boot and
+                have expriece in React and Typescript frontends.
               </p>
               <div className="d-flex flex-column flex-sm-row gap-3">
                 <button
@@ -382,7 +382,7 @@ const SinglePagePortfolio = () => {
               className="fs-5 text-white mx-auto"
               style={{ maxWidth: "600px" }}
             >
-              I specialize in full-stack development with a focus on modern,
+              I specialize in backend development with a focus on modern,
               scalable solutions
             </p>
           </div>
