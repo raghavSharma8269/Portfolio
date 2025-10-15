@@ -768,9 +768,6 @@ const SinglePagePortfolio = () => {
               Raghav Sharma
             </span>
           </div>
-          <p className="text-white mb-0">
-            © 2025 Raghav Sharma. All rights reserved.
-          </p>
           <div>
             {/* Social Icons */}
             <a
