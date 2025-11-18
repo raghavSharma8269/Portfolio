@@ -1,6 +1,7 @@
 import "./SinglePagePortfolio.css";
 import JobVaultImage from "../assets/projectImages/JobVaultLightPurple.svg";
 import OverCoffeeImage from "../assets/projectImages/overCoffeeCreme-D_-bYlWA.svg";
+import SbuLogo from "../assets/projectImages/SBU_Logo.png";
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import {
@@ -558,6 +559,58 @@ const SinglePagePortfolio = () => {
             style={{ animationDelay: "0.3s", animationDuration: "1s" }}
           >
             {/* First Project */}
+            <div className="col-lg-10">
+              <div className="card bg-dark border-white">
+                <div className="card-body p-4">
+                  <div className="row align-items-center">
+                    <div className="col-lg-6 text-center mb-4 mb-lg-0">
+                      <div className="rounded p-5">
+                        <img
+                          src={SbuLogo}
+                          alt="SBU PathFinder Project"
+                          className="img-fluid rounded"
+                          style={{ maxWidth: "100%", height: "auto" }}
+                        />
+                      </div>
+                    </div>
+                    <div className="col-lg-6">
+                      <h4 className="fw-bold mb-3" style={{ color: "#14E0A1" }}>
+                        SBU PathFinder
+                      </h4>
+                      <p className="text-white mb-4">
+                        SBU Pathfinder is an AI-powered academic advisor that
+                        won 1st Place Overall at SBUHacks 2025. The project
+                        addresses a common frustration for Stony Brook students:
+                        juggling multiple platforms like SOLAR, Class Eval,
+                        RateMyProfessor, and ScheduleBuilder when planning
+                        courses.
+                        <br />
+                        <br />
+                        Our winning solution, built with NeuralSeek's AI
+                        technology and ElevenLabs voice integration,
+                        consolidates everything into one intelligent platform
+                        that provides personalized course recommendations and
+                        career roadmaps. The AI can communicate in English,
+                        Hindi, Spanish, and Mandarin, making academic guidance
+                        accessible to Stony Brook's diverse student body. Future
+                        plans include expanding to support all majors, adding
+                        voice based editing, and integrating resume scanning for
+                        more personalized recommendations.
+                      </p>
+                      <a
+                        href="https://devpost.com/software/sbu-pathfinder"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn fw-semibold px-4 py-2"
+                        style={{ backgroundColor: "#14E0A1", color: "black" }}
+                      >
+                        View Project →
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div className="col-lg-10">
               <div className="card bg-dark border-white">
                 <div className="card-body p-4">
