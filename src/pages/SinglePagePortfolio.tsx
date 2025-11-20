@@ -579,8 +579,8 @@ const SinglePagePortfolio = () => {
                       </h4>
                       <p className="text-white mb-4">
                         SBU Pathfinder is an AI-powered academic advisor that
-                        won 1st Place 🏆 at SBUHacks 2025. The project addresses
-                        a common frustration for Stony Brook students: juggling
+                        won 1st Place at SBUHacks 2025. The project addresses a
+                        common frustration for Stony Brook students: juggling
                         multiple platforms like SOLAR, Class Eval,
                         RateMyProfessor, and ScheduleBuilder when planning
                         courses.
