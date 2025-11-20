@@ -2,6 +2,7 @@ import "./SinglePagePortfolio.css";
 import JobVaultImage from "../assets/projectImages/JobVaultLightPurple.svg";
 import OverCoffeeImage from "../assets/projectImages/overCoffeeCreme-D_-bYlWA.svg";
 import SbuLogo from "../assets/projectImages/SBU_Logo.png";
+import NextFare from "../assets/projectImages/NextFare.png";
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import {
@@ -606,6 +607,59 @@ const SinglePagePortfolio = () => {
                       >
                         View Project →
                       </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Second Project */}
+            <div className="col-lg-10">
+              <div className="card bg-dark border-white">
+                <div className="card-body p-4">
+                  <div className="row align-items-center">
+                    <div className="col-lg-6 text-center mb-4 mb-lg-0">
+                      <div className="rounded p-5">
+                        <img
+                          src={NextFare}
+                          alt="NextFare Project"
+                          className="img-fluid rounded"
+                          style={{ maxWidth: "100%", height: "auto" }}
+                        />
+                      </div>
+                    </div>
+                    <div className="col-lg-6">
+                      <h4 className="fw-bold mb-3" style={{ color: "#14E0A1" }}>
+                        NextFare{" "}
+                        <span style={{ color: "red" }}>(In Progress)</span>
+                      </h4>
+                      <p className="text-white mb-4">
+                        NextFare is a mobile rideshare companion app built with
+                        React Native and Expo that helps drivers maximize their
+                        earnings by identifying high-demand event locations in
+                        real-time. The project addresses a key challenge for
+                        Uber and Lyft drivers: knowing where and when to
+                        position themselves to catch the most profitable fares.
+                        <br />
+                        <br />
+                        Built with a focus on usability, the app includes
+                        features like one-tap navigation to events (supporting
+                        both Google Maps and Apple Maps), automatic event
+                        refresh, and a profile system that tracks driver
+                        activity. The dark map styling and clean UI ensure the
+                        app is comfortable to use during night driving. Future
+                        plans include push notifications for surge events,
+                        earnings tracking, and community features where drivers
+                        can share real-time insights about event profitability.
+                      </p>
+                      {/* <a
+                        href="https://devpost.com/software/sbu-pathfinder"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn fw-semibold px-4 py-2"
+                        style={{ backgroundColor: "#14E0A1", color: "black" }}
+                      >
+                        View Project →
+                      </a> */}
                     </div>
                   </div>
                 </div>
